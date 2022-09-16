@@ -14,6 +14,8 @@ Server.configure do |app|
     get "/search/:query", ApiController, :search
     get "/alphabetical", ApiController, :alphabetical
   end
+
+  app.port = ENV["FUNCTIONS_CUSTOMHANDLER_PORT"].to_i if ENV["FUNCTIONS_CUSTOMHANDLER_PORT"]?
 end
 
 Server.start
