@@ -23,7 +23,7 @@
     protected override async Task OnParametersSetAsync() {
         Results = null;
         StateHasChanged();
-        Results = await HttpClient.GetFromJsonAsync<SearchResults>($"/search/{Query}");
+        Results = await HttpClient.GetFromJsonAsync<SearchResults>($"/api/search/{Query}");
     }
 
 }

@@ -9,7 +9,7 @@ Server.configure do |app|
     plug Pipe::CORS.new
   end
 
-  routes :api do
+  routes :api, "/api" do
     get "/", ApiController, :index
     get "/search/:query", ApiController, :search
     get "/alphabetical", ApiController, :alphabetical

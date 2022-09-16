@@ -17,7 +17,7 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender) {
         if (firstRender) {
-            Words = await HttpClient.GetFromJsonAsync<List<Word>>("/alphabetical");
+            Words = await HttpClient.GetFromJsonAsync<List<Word>>("/api/alphabetical");
             StateHasChanged();
         }
     }
