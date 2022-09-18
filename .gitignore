@@ -13,6 +13,6 @@ riderModule.iml
 /_ReSharper.Caches/
 node_modules/
 .pnpm-debug.log
-wwwroot/css/app.css
-wwwroot/css/app.css.map
-wwwroot/Okena.js
+Client/wwwroot/css/app.css
+Client/wwwroot/css/app.css.map
+Client/wwwroot/Okena.js
