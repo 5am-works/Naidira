@@ -1,4 +1,4 @@
-require "../Dictionary"
+require "../dictionary"
 require "../word"
 require "./constituent"
 
