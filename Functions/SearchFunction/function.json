@@ -7,8 +7,7 @@
       "name": "req",
       "route": "search/{query}",
       "methods": [
-        "get",
-        "post"
+        "get"
       ]
     },
     {
